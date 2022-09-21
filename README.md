@@ -16,18 +16,29 @@
 
 `beka@beka-virtual-machine:~$ sudo apt install ros-foxy-turtlesim`
 >> [sudo] password for beka: >>insert your ROS password
+
 >>Reading package lists... Done
+
 >>Building dependency tree... Done
+
 >>Reading state information... Done
 
 `beka@beka-virtual-machine:~$ ros2 pkg executables turtlesim`
+
 >>turtlesim draw_square
+
 >>turtlesim mimic
+
 >>turtlesim turtle_teleop_key
+
 >>turtlesim turtlesim_node
+
 `beka@beka-virtual-machine:~$ ros2 run turtlesim turtlesim_node`
+
 >>Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+
 >>[INFO] [1663738168.550771480] [turtlesim]: Starting turtlesim with node name /turtlesim
+
 >>[INFO] [1663738168.560139707] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta >>[0.000000]
 
 ##The following picture shows how it goes
@@ -35,10 +46,15 @@
 ![Screenshot from 2022-09-21 14-29-45](https://user-images.githubusercontent.com/91641488/191421874-c85a4b2f-fbd7-46ab-8d29-43a3480b4a88.png)
 
 `beka@beka-virtual-machine:~$ ros2 run turtlesim turtle_teleop_key`
+
 >>Reading from keyboard
+
 >>---------------------------
+
 >>Use arrow keys to move the turtle.
+
 >>Use G|B|V|C|D|E|R|T keys to rotate to absolute orientations. 'F' to cancel a rotation.
+
 >>'Q' to quit.
 
 ## OPen a new terminal and run the following code
