@@ -27,7 +27,7 @@ sudo apt install ros-foxy-turtlesim
 
 ```
 beka@beka-virtual-machine:~$ ros2 pkg executables turtlesim
-```
+
 
 >>turtlesim draw_square
 
@@ -36,6 +36,7 @@ beka@beka-virtual-machine:~$ ros2 pkg executables turtlesim
 >>turtlesim turtle_teleop_key
 
 >>turtlesim turtlesim_node
+```
 
 ```
 ros2 run turtlesim turtlesim_node
