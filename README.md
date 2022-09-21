@@ -14,7 +14,9 @@
 
 >>**The code should be the way:**
 
-`beka@beka-virtual-machine:~$ sudo apt install ros-foxy-turtlesim`
+```
+sudo apt install ros-foxy-turtlesim
+```
 >> [sudo] password for beka: >>insert your ROS password
 
 >>Reading package lists... Done
@@ -35,7 +37,9 @@ beka@beka-virtual-machine:~$ ros2 pkg executables turtlesim
 
 >>turtlesim turtlesim_node
 
-`beka@beka-virtual-machine:~$ ros2 run turtlesim turtlesim_node`
+```
+ros2 run turtlesim turtlesim_node
+```
 
 >>Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
 
@@ -47,7 +51,9 @@ beka@beka-virtual-machine:~$ ros2 pkg executables turtlesim
 
 ![Screenshot from 2022-09-21 14-29-45](https://user-images.githubusercontent.com/91641488/191421874-c85a4b2f-fbd7-46ab-8d29-43a3480b4a88.png)
 
-`beka@beka-virtual-machine:~$ ros2 run turtlesim turtle_teleop_key`
+```
+ros2 run turtlesim turtle_teleop_key
+```
 
 >>Reading from keyboard
 
@@ -62,9 +68,11 @@ beka@beka-virtual-machine:~$ ros2 pkg executables turtlesim
 ## Open a new terminal and run the following code
 
 
-`1.beka@beka-virtual-machine:~$ rqt`
+```
+rqt
+```
 
-`2.beka@beka-virtual-machine:~$ ros2 run turtlesim turtlesim_node``
+```ros2 run turtlesim turtlesim_node```
 
 >>Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
 
@@ -76,9 +84,10 @@ beka@beka-virtual-machine:~$ ros2 pkg executables turtlesim
 
 >>^C[INFO] [1663733561.194649277] [rclcpp]: signal_handler(signum=2)
 
-`5.beka@beka-virtual-machine:~$
 
-6.beka@beka-virtual-machine:~$ ros2 node info /my_turtle`
+```
+ros2 node info /my_turtle
+```
 
 >>7./my_turtle
 
