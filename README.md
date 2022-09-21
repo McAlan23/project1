@@ -16,7 +16,7 @@
 
 ```
 sudo apt install ros-foxy-turtlesim
-```
+
 >> [sudo] password for beka: >>insert your ROS password
 
 >>Reading package lists... Done
@@ -24,6 +24,7 @@ sudo apt install ros-foxy-turtlesim
 >>Building dependency tree... Done
 
 >>Reading state information... Done
+```
 
 ```
 beka@beka-virtual-machine:~$ ros2 pkg executables turtlesim
@@ -40,7 +41,7 @@ beka@beka-virtual-machine:~$ ros2 pkg executables turtlesim
 
 ```
 ros2 run turtlesim turtlesim_node
-```
+
 
 >>Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
 
@@ -48,13 +49,14 @@ ros2 run turtlesim turtlesim_node
 
 >>[INFO] [1663738168.560139707] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta >>[0.000000]
 
+```
+
 ##The following picture shows how it goes
 
 ![Screenshot from 2022-09-21 14-29-45](https://user-images.githubusercontent.com/91641488/191421874-c85a4b2f-fbd7-46ab-8d29-43a3480b4a88.png)
 
 ```
 ros2 run turtlesim turtle_teleop_key
-```
 
 >>Reading from keyboard
 
@@ -65,7 +67,7 @@ ros2 run turtlesim turtle_teleop_key
 >>Use G|B|V|C|D|E|R|T keys to rotate to absolute orientations. 'F' to cancel a rotation.
 
 >>'Q' to quit.
-
+```
 ## Open a new terminal and run the following code
 
 
@@ -73,7 +75,7 @@ ros2 run turtlesim turtle_teleop_key
 rqt
 ```
 
-```ros2 run turtlesim turtlesim_node```
+```ros2 run turtlesim turtlesim_node
 
 >>Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
 
@@ -84,11 +86,11 @@ rqt
 >>[INFO] [1663733538.414393359] [turtlesim]: Spawning turtle [tutrle123] at x=[10.000000], y=[3.000000], theta=[0.000000]
 
 >>^C[INFO] [1663733561.194649277] [rclcpp]: signal_handler(signum=2)
-
+```
 
 ```
 ros2 node info /my_turtle
-```
+
 
 >>7./my_turtle
 
@@ -159,3 +161,4 @@ ros2 node info /my_turtle
 >> /turtle1/rotate_absolute: turtlesim/action/RotateAbsolute
 
 >> Action Clients:>
+```
