@@ -93,10 +93,10 @@
 >> 11. Service Clients:
 
 
-<12.Action Servers:
+>> 12.Action Servers:
 
-/my_turtle/rotate_absolute: turtlesim/action/RotateAbsolute
+>> /my_turtle/rotate_absolute: turtlesim/action/RotateAbsolute
 
-/turtle1/rotate_absolute: turtlesim/action/RotateAbsolute
+>> /turtle1/rotate_absolute: turtlesim/action/RotateAbsolute
 
-Action Clients:>
+>> Action Clients:>
