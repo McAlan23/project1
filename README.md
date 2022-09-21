@@ -57,7 +57,7 @@
 
 >>'Q' to quit.
 
-## OPen a new terminal and run the following code
+## Open a new terminal and run the following code
 
 
 `1.beka@beka-virtual-machine:~$ rqt`
