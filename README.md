@@ -23,7 +23,9 @@
 
 >>Reading state information... Done
 
-`beka@beka-virtual-machine:~$ ros2 pkg executables turtlesim`
+```
+beka@beka-virtual-machine:~$ ros2 pkg executables turtlesim
+```
 
 >>turtlesim draw_square
 
