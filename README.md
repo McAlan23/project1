@@ -69,7 +69,18 @@ ros2 run turtlesim turtle_teleop_key
 >>'Q' to quit.
 ```
 ## Open a new terminal and run the following code
+```
+sudo apt install ~nros-foxy-rqt*
 
+[sudo] password for beka: 
+
+Reading package lists... Done
+
+Building dependency tree... Done
+
+Reading state information... Done
+
+```
 
 ```
 rqt
@@ -86,6 +97,12 @@ rqt
 >>[INFO] [1663733538.414393359] [turtlesim]: Spawning turtle [tutrle123] at x=[10.000000], y=[3.000000], theta=[0.000000]
 
 >>^C[INFO] [1663733561.194649277] [rclcpp]: signal_handler(signum=2)
+```
+
+```
+ros2 node list
+/my_turtle
+/rqt_gui_py_node_12356
 ```
 
 ```
@@ -161,4 +178,62 @@ ros2 node info /my_turtle
 >> /turtle1/rotate_absolute: turtlesim/action/RotateAbsolute
 
 >> Action Clients:>
+```
+>> In the case that you want to see the graph you need to run in the same time through the different terminals 
+>> teleop and turtlesim-key command in the same time 
+>> After that open the RQT
+>> Ther youu need to go through the #Plugins>Introspection>Node Graph
+## The graph it will show the main code
+![Screenshot from 2022-09-21 15-17-27](https://user-images.githubusercontent.com/91641488/191429209-288ff126-a50d-45ec-b5af-196ce5843995.png)
+
+```
+ros2 topic list
+
+>>/my_turtle/cmd_vel
+
+>>/my_turtle/color_sensor
+
+>>/my_turtle/pose
+
+>>/parameter_events
+
+>>/rosout
+
+>>/turtle1/cmd_vel
+
+>>/turtle1/color_sensor
+
+>>/turtle1/pose
+```
+
+```
+ros2 topic list -t
+>>/my_turtle/cmd_vel [geometry_msgs/msg/Twist]
+
+>>/my_turtle/color_sensor [turtlesim/msg/Color]
+
+>>/my_turtle/pose [turtlesim/msg/Pose]
+
+>>/parameter_events [rcl_interfaces/msg/ParameterEvent]
+
+>>/rosout [rcl_interfaces/msg/Log]
+
+>>/turtle1/cmd_vel [geometry_msgs/msg/Twist]
+
+
+>>/turtle1/color_sensor [turtlesim/msg/Color]
+
+>>/turtle1/pose [turtlesim/msg/Pose]
+
+```
+## the following picture shows the active graph charts
+>>To see the active graph chart at the graph part you need to change the graph type to the "Node/Topic(active)"
+![Screenshot from 2022-09-21 15-31-50](https://user-images.githubusercontent.com/91641488/191431289-4b7801e6-e14d-4ca0-8859-998d917d66a6.png)
+
+```
+ros2 topic info /my_turtle/cmd_vel
+>>Type: geometry_msgs/msg/Twist
+>>Publisher count: 0
+>>Subscription count: 2
+
 ```
