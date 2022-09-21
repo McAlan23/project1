@@ -1,12 +1,16 @@
 # project1
-the first project1
+the first project1.
+
 [Screencast from 2022년 09월 20일 11시 37분 15초.webm](https://user-images.githubusercontent.com/91641488/191155034-4bfc8091-f171-49de-ab67-3c5d331a4abc.webm)
+
 Demo-video number one.
 
 [Screencast from 2022년 09월 20일 11시 37분 15초.webm](https://user-images.githubusercontent.com/91641488/191156770-54a3151d-fb6f-46b7-a352-c63734b97730.webm)
+
 Demo-video number two.
 ![Screenshot from 2022-09-20 11-51-53](https://user-images.githubusercontent.com/91641488/191156784-c74f9729-ecff-4208-9d3e-e0f75eb34bbb.png)
-screenshot that shows how it works.
+
+Screenshot that shows how it works.
 
 1.beka@beka-virtual-machine:~$ rqt
 
