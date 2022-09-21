@@ -17,21 +17,27 @@ the first project1
 [INFO] [1663733476.580853171] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
 [INFO] [1663733538.414393359] [turtlesim]: Spawning turtle [tutrle123] at x=[10.000000], y=[3.000000], theta=[0.000000]
 ^C[INFO] [1663733561.194649277] [rclcpp]: signal_handler(signum=2)
-5.beka@beka-virtual-machine:~$ 
+
+5.beka@beka-virtual-machine:~$
+
 6.beka@beka-virtual-machine:~$ ros2 node info /my_turtle
+
 7./my_turtle
-  8.Subscribers:
+
+8.Subscribers:
     /my_turtle/cmd_vel: geometry_msgs/msg/Twist
     /parameter_events: rcl_interfaces/msg/ParameterEvent
     /turtle1/cmd_vel: geometry_msgs/msg/Twist
-  9.Publishers:
+
+9.Publishers:
     /my_turtle/color_sensor: turtlesim/msg/Color
     /my_turtle/pose: turtlesim/msg/Pose
     /parameter_events: rcl_interfaces/msg/ParameterEvent
     /rosout: rcl_interfaces/msg/Log
     /turtle1/color_sensor: turtlesim/msg/Color
     /turtle1/pose: turtlesim/msg/Pose
-   10. Service Servers:
+
+10. Service Servers:
     /clear: std_srvs/srv/Empty
     /kill: turtlesim/srv/Kill
     /my_turtle/describe_parameters: rcl_interfaces/srv/DescribeParameters
@@ -48,9 +54,11 @@ the first project1
     /turtle1/set_pen: turtlesim/srv/SetPen
     /turtle1/teleport_absolute: turtlesim/srv/TeleportAbsolute
     /turtle1/teleport_relative: turtlesim/srv/TeleportRelative
-  11. Service Clients:
 
-  12.Action Servers:
+11. Service Clients:
+
+
+12.Action Servers:
     /my_turtle/rotate_absolute: turtlesim/action/RotateAbsolute
     /turtle1/rotate_absolute: turtlesim/action/RotateAbsolute
   Action Clients:
