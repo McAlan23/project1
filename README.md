@@ -230,6 +230,8 @@ ros2 topic list -t
 >>To see the active graph chart at the graph part you need to change the graph type to the "Node/Topic(active)"
 ![Screenshot from 2022-09-21 15-31-50](https://user-images.githubusercontent.com/91641488/191431289-4b7801e6-e14d-4ca0-8859-998d917d66a6.png)
 
+
+##week 5 
 ```
 ros2 topic info /my_turtle/cmd_vel
 >>Type: geometry_msgs/msg/Twist
@@ -237,3 +239,70 @@ ros2 topic info /my_turtle/cmd_vel
 >>Subscription count: 2
 
 ```
+#open a new terminal
+```
+ros2 run turtlesim turtlesim_node
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+[INFO] [1664243364.365419413] [turtlesim]: Starting turtlesim with node name /turtlesim
+[INFO] [1664243364.373763712] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
+
+```
+#open a new terminnal
+```
+ros2 service type /clean
+ros2 service list -t
+/clear [std_srvs/srv/Empty]
+/kill [turtlesim/srv/Kill]
+/reset [std_srvs/srv/Empty]
+/spawn [turtlesim/srv/Spawn]
+/teleop_turtle/describe_parameters [rcl_interfaces/srv/DescribeParameters]
+/teleop_turtle/get_parameter_types [rcl_interfaces/srv/GetParameterTypes]
+/teleop_turtle/get_parameters [rcl_interfaces/srv/GetParameters]
+/teleop_turtle/list_parameters [rcl_interfaces/srv/ListParameters]
+/teleop_turtle/set_parameters [rcl_interfaces/srv/SetParameters]
+/teleop_turtle/set_parameters_atomically [rcl_interfaces/srv/SetParametersAtomically]
+/turtle1/set_pen [turtlesim/srv/SetPen]
+/turtle1/teleport_absolute [turtlesim/srv/TeleportAbsolute]
+/turtle1/teleport_relative [turtlesim/srv/TeleportRelative]
+/turtlesim/describe_parameters [rcl_interfaces/srv/DescribeParameters]
+/turtlesim/get_parameter_types [rcl_interfaces/srv/GetParameterTypes]
+/turtlesim/get_parameters [rcl_interfaces/srv/GetParameters]
+/turtlesim/list_parameters [rcl_interfaces/srv/ListParameters]
+/turtlesim/set_parameters [rcl_interfaces/srv/SetParameters]
+/turtlesim/set_parameters_atomically [rcl_interfaces/srv/SetParametersAtomically]
+
+```
+#here you can see the main output that shows the /clean service is actually shows the [std_srvs/srv/Empty]
+
+```
+ros2 service find std_srvs/srv/Empty
+/clear
+/reset
+
+```
+
+```
+ros2 interface show std_srvs/srv/Empty.srv
+'---'
+
+```
+
+```
+ros2 interface show turtlesim/srv/Spawn
+float32 x
+float32 y
+float32 theta
+string name # Optional.  A unique name will be created and returned if this is empty
+---
+string name
+```
+```
+ros2 service call /spawn turtlesim/srv/Spawn "{x : 2, y :  2, theta : 0.2, name: ''}"
+requester: making request: turtlesim.srv.Spawn_Request(x=2.0, y=2.0, theta=0.2, name='')
+
+response:
+turtlesim.srv.Spawn_Response(name='turtle2')
+```
+## Understanding a parameters
+
+
