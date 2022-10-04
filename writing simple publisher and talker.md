@@ -205,7 +205,7 @@ Summary: 1 package finished [0.93s]
 ros2 run py_pubsub talker 
 
 ```
-## output for this will be 
+## Output for this will be.
 ```
 [INFO] [1664850544.329996210] [minimal_publisher]: Publishing: "Hello World: 0"
 [INFO] [1664850544.821959581] [minimal_publisher]: Publishing: "Hello World: 1"
@@ -218,4 +218,17 @@ ros2 run py_pubsub talker
 [INFO] [1664850548.321717629] [minimal_publisher]: Publishing: "Hello World: 8"
 [INFO] [1664850548.822190574] [minimal_publisher]: Publishing: "Hello World: 9"
 
+```
+## The next step is to show how listener.
+
+```
+ros2 run py_pubsub listener
+```
+
+```
+[INFO] [minimal_subscriber]: I heard: "Hello World: 10"
+[INFO] [minimal_subscriber]: I heard: "Hello World: 11"
+[INFO] [minimal_subscriber]: I heard: "Hello World: 12"
+[INFO] [minimal_subscriber]: I heard: "Hello World: 13"
+[INFO] [minimal_subscriber]: I heard: "Hello World: 14"
 ```
